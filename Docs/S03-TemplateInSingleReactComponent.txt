@@ -17,18 +17,34 @@
 	
 	
 	
-	Move demo html code to React Component
+	3) Create a new React Component and connect it to index.html
 	
+		Current : index.html < index.js < App.jsx
+	
+		Our Goal: index.html < index.js < App.jsx < MainLayout.jsx
+		
 	3.1) Create a React Component 
 		In /src dir
 		
-		function MainLayout() {
-			return (
-				<div>test with react</div>
-			);
-		}
+		NewFile: MainLayout.jsx
+		
+		
+			function MainLayout() {
+				return (
+					<div>MainLayout: test with react</div>
+				);
+			}
+			export default MainLayout
+			
 
-	3.2) Modify previous function to return the whole DemoPage.html
+	3.2) In App.jsx
+	
+		import MainLayout.jsx
+	
+	
+	
+	
+	Modify previous function to return the whole DemoPage.html
 		
 		function MainLayout() {
 			return (
@@ -37,7 +53,7 @@
 		}
 	
 
-export default App;
+;
 	
 	2) Copy header from page into /public/index.html page
 	
