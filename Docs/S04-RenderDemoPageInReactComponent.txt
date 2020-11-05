@@ -28,9 +28,9 @@
 
 
 	7) Start to split into html fragments:
-		menuTop
-		menuLeft
-		Master
+		MenuTop
+		MenuLeft
+		Content
 	
 	
 	Some correction Html to React
