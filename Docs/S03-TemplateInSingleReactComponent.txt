@@ -1,0 +1,51 @@
+
+ GOAL:
+ We want to access (one of the Demo Pages) from localhost:3000
+ 
+ 
+	1) Cleanup unnecessary files:
+		remove from /public
+		- robots.txt 
+		- *.png
+		- favicon.ico
+		
+		remove from /src
+		- logo.svg
+		
+	
+	2) Copy headers from <DemoPage.html> into /public/index.html headers
+	
+	
+	
+	Move demo html code to React Component
+	
+	3.1) Create a React Component 
+		In /src dir
+		
+		function MainLayout() {
+			return (
+				<div>test with react</div>
+			);
+		}
+
+	3.2) Modify previous function to return the whole DemoPage.html
+		
+		function MainLayout() {
+			return (
+				<div>test with react</div>
+			);
+		}
+	
+
+export default App;
+	
+	2) Copy header from page into /public/index.html page
+	
+	3) Copy Run node server
+		> yarn start
+		
+	3) Verify demo pages are accessible
+		localhost:3000/demoPageName.html
+		
+	
+	
