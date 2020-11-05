@@ -1,4 +1,5 @@
 import TopNavigationBar from './TopNavigationBar.jsx'
+import LeftMenu from './LeftMenu.jsx'
 
 function MainLayout() {
 
@@ -9,43 +10,19 @@ function MainLayout() {
    
    <div className="container-fluid ">
 				
-        {/* Navigation Bar Start */ } 
-             <TopNavigationBar />
-	   {/* Navigation Bar End */ }
+     
+          <TopNavigationBar />
 
 
-	{/*<!-- Start Wrapper  -->  */ }
   <div id="wrapper">
-
-			<div id="menu" className="hidden-phone">
-				<div id="menuInner">
-					<div id="search">
-						<input type="text" placeholder="Quick search ..." />
-						<button className="glyphicons search"><i></i></button>
-					</div>
-					
-					<ul>
-						<li className="heading"><span>E Shop</span></li>
-						<li className="glyphicons search"><a href="finances.html?lang=en"><i></i><span>Search Products</span></a></li>
-					</ul>
-					<ul>
-						<li className="heading"><span>Users</span></li>
-						<li className="glyphicons user_add"><a href="finances.html?lang=en"><i></i><span>Create User</span></a></li>
-						<li className="glyphicons group"><a href="finances.html?lang=en"><i></i><span>Admin Users</span></a></li>		
-					</ul>				
-					<ul>
-						<li className="heading"><span>Admin</span></li>					
-						<li className="glyphicons gift"><a href="finances.html?lang=en"><i></i><span>Create Product</span></a></li>	
-						<li className="glyphicons table"><a href="finances.html?lang=en"><i></i><span>Admin Products</span></a></li>									
-					</ul>
-				</div>
-		</div>
+			<LeftMenu />
 
 
+ {/*<!-- Start Content  -->  */ }
 		<div id="content">
 			
-
-
+      Default Content
+      
 		<div className="innerLR">
 				
 			<div className="row-fluid">							
@@ -58,8 +35,7 @@ function MainLayout() {
 					</div>
 				<hr className="separator bottom" />
 				<div className="widget-body" style={{ padding: '10px' }}>
-				{/*<!-- --------------------------------------------- -->	*/}
-					
+						
 				<table className="table table-bordered table-condensed table-striped table-primary table-vertical-center checkboxs">
 					<thead>
 						<tr>
@@ -127,16 +103,16 @@ function MainLayout() {
 						</tr>
 					</tbody>
 				</table>
-				</div>					
-	{/* <!-- --------------------------------------------- -->			*/ }			
+				</div>		
+			
 				</div>
-			</div>	{/*<!-- 1st row fluid -->*/ }		
-					
-		</div>	{/*<!-- innerLR -->*/ }		
-	
-			{/*<!-- End Content -->*/ }		
+      </div>					
+		</div>	
+			
 		</div>
+     {/*<!-- End Content  -->  */ }
 		
+
 		</div>
 		{/*<!-- End Wrapper  -->  */ }
 
