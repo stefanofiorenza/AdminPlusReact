@@ -3,3 +3,58 @@
  We want to access (one of the Demo Pages) from localhost:3000
  
  
+	1) Scaffolding:
+	
+		Create following dirs:
+		
+		/src/components/layout
+		/src/components/pages
+		
+	2) move MainLayout.jsx to /src/components/layout
+	
+	3) Update import in App.jsx accordingly: (Visual studio should ask about it)
+	
+		import MainLayout from './components/MainLayout.jsx';
+		
+	4) test again with Server that everything works:
+		yarn start
+		
+	
+	5) Identify main Section of body from DemoPage.html (use Visual Studio to check div start end)
+		Put a start -- end comment
+		
+	
+	6) Create Wireframe:
+
+
+	7) Start to split into html fragments:
+		menuTop
+		menuLeft
+		Master
+	
+	
+	Some correction Html to React
+	
+		
+		6.1) Find/Replace all class should become className
+		
+		6.2) Find/Replace comments (if you wish to keep them at all)
+			F: <!--
+			R: {/*<!--
+			
+			F: -->
+			R:  -->*/}
+		
+		6.3) Close empty tags <br> should <br/> and so on:
+		Best candidate to search:
+			<br>
+			<hr>
+			<input>
+		
+		6.4) All style should be replace according to react:
+		https://reactjs.org/docs/dom-elements.html#style
+		
+		Replace style with 
+		
+		{{ height: 10 }}
+	
