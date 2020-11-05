@@ -24,10 +24,11 @@
 		Our Goal: index.html < index.js < App.jsx < MainLayout.jsx
 		
 	3.1) Create a React Component 
-		In /src dir
 		
-		NewFile: MainLayout.jsx
 		
+		3.1.1) In /src dir NewFile: MainLayout.jsx
+		
+		3.1.2) File contents:
 		
 			function MainLayout() {
 				return (
@@ -39,29 +40,38 @@
 
 	3.2) In App.jsx
 	
-		import MainLayout.jsx
+		3.2.1) Import React component
+		import MainLayout from '.MainLayout.jsx';
 	
-	
-	
-	
-	Modify previous function to return the whole DemoPage.html
+		3.2.2) change render function to return it inside a div:
 		
-		function MainLayout() {
-			return (
-				<div>test with react</div>
-			);
-		}
+		 return (
+			<div>
+			  <MainLayout />
+			</div>   
+		  );
 	
+	
+		3.2.3) Final result:
+			import './App.css';
+			import MainLayout from '.MainLayout.jsx';
 
-;
+			function App() {
+			  return (
+				<div>
+				  <MainLayout />
+				</div>   
+			  );
+			}
+
+			export default App;
+
 	
-	2) Copy header from page into /public/index.html page
-	
-	3) Copy Run node server
+	4) Run node server
 		> yarn start
 		
-	3) Verify demo pages are accessible
-		localhost:3000/demoPageName.html
+	5) Verify MainLayout html is accessible from 
+		localhost:3000
 		
 	
 	
