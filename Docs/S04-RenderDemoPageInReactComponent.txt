@@ -40,21 +40,20 @@
 		
 		6.2) Find/Replace comments (if you wish to keep them at all)
 			F: <!--
-			R: {/*<!--
+			R: {/* <!--
 			
 			F: -->
-			R:  -->*/}
+			R:  --> */}
 		
 		6.3) Close empty tags <br> should <br/> and so on:
 		Best candidate to search:
-			<br>
-			<hr>
-			<input>
+			F: <br>
+			F: <hr>
+			F: <input>
 		
 		6.4) All style should be replace according to react:
 		https://reactjs.org/docs/dom-elements.html#style
 		
 		Replace style with 
-		
-		{{ height: 10 }}
+		{{ height: '10' }}
 	
